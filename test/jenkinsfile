@@ -6,6 +6,7 @@ pipeline {
             steps {
                 git 'https://github.com/Andersonalmeida99/TESTES-MOBILE-EBAC-SHOP.git'
         }
+    }
         stage('Instalar dependencias') {
             steps {
                 bat'npm install'
