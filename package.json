@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run ./wdio.conf.js",
-    "cy:run": "npx cypress run"
+    "cy:run": "npm cypress run"
   },
   "author": "",
   "license": "ISC",
