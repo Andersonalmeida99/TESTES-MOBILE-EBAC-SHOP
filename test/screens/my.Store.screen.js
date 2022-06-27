@@ -6,7 +6,7 @@ class MyStoreScreen {
     get #myStoreName() {
         return $('id:toolbar_subtitle')
     }
-  async myStoreLogoisDisplayed(){
+  async myStoreLogoIsDisplayed(){
     await this.#myStoreLogo.waitForExist()
     return await  this.#myStoreLogo.isDisplayed()
     

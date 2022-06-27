@@ -1,26 +1,26 @@
 class LoginScreen {
-    get #storeAddress() { return $('android.widget.EditText') }
+    get #StoreAddress() { return $('android.widget.EditText') }
 
     get #continue() { return $('id:bottom_button') }
 
-    get #continueWhiteStoreCredentials(){ return $('id:login_site_creds')}
+    get #continueWithStoreCredentials() { return $('id:login_site_creds')}
 
-    get #username(){ return $ ('android=new UiSelector().text("Username")')}
+    get #username() { return $ ('android=new UiSelector().text("Username")')}
 
-    get #password(){ return $ ('android=new UiSelector().text("Password")')}
+    get #password() { return $ ('android=new UiSelector().text("Password")')}
 
-    get #twoFactorPasswordBtn() { return $('id:login_enter_password')}
+    get #twoFactorPasswordBtn() { return $("id:login_enter_password")}
     
     async setStoreAddress(url) {
-        this.#StoreAddress.setValue(url)
+      await this.#StoreAddress.setValue(url)
     }
 
 async continue () {
-    await this.#continue.click()
+   await this.#continue.click()
 }
 
 async continue () {
-    await this.#continueWhiteStoreCredentials.click()
+    await this.#continueWithStoreCredentials.waitForExist().click()
 }
 
 async login (username,password){

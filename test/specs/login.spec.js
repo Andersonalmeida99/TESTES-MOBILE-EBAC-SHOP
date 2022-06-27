@@ -5,8 +5,8 @@ let urlLoja = 'http://lojaebac.ebaconline.art.br/'
 let usuario = 'gerente'
 let senha = 'GD*peToHNJ1#c$sgk08EaYJQ'
 
-describe('Acess Admin Panel', ()=> {
-it('Shoud login with valid credentials', async   () => {
+describe('Acess Admin Panel', () => {
+it('shoud login with valid credentials', async   () => {
   await homeScreen.goToLogin()
   await loginScreen.setStoreAddress(urlLoja)
   await loginScreen.continue()
@@ -15,7 +15,7 @@ it('Shoud login with valid credentials', async   () => {
   await loginScreen.twoFactorLogin(senha)
 
   
-  expect(await myStoreScreen.myStoreLogoisDisplayed()).toBeTruthy()
+  expect(await myStoreScreen.myStoreLogoIsDisplayed()).toBeTruthy()
   expect(await myStoreScreen.getStoreName()).toEqual('EBAC-Shop')
  
 });
