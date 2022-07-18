@@ -14,9 +14,10 @@ exports.config = {
         "deviceName": "ebac-qe",
         "automatioName": "UiAutomator2",
         "app": join(process.cwd(),'./app/android/loja-ebac.apk'),
-        "appWaitActivity": 'com.woocommerce.android.ui.login.LoginActivity'
+        "appWaitActivity": 'com.woocommerce.android.ui.login.LoginActivity',
+        
     }],
-    waitFortimeout: 200000 ,
+    waitFortimeout: 20000 ,
     mochaOpts: {
       timeout: 300000
     }
