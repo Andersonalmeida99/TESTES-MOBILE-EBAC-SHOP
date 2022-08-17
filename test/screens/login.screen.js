@@ -36,7 +36,7 @@ class LoginScreen {
         await this.#twoFactorPasswordBtn.click()
     
     }
-    async twoFactorLogin(Password) {
+    async twoFactorLogin(password) {
         await this.#password.setValue(password)
         await this.#continue.click()
 

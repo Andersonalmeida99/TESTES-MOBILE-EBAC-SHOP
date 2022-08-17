@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660663539210' stop='1660663613830'>
+    <name>Acess Admin Panel</name>
+    <title>Acess Admin Panel</title>
+    <test-cases>
+        <test-case start='1660663539212' status='broken' stop='1660663613811'>
+            <name>Shoud login with valid credentials</name>
+            <title>Shoud login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ebac-qe 10.0-10'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='700f1368-227d-4293-925b-d3260f695f7a-attachment.mp4' type='video/mp4' size='143'/>
+            </attachments>
+            <failure>
+                <message>element ("id:login_enter_password") still not existing after 10000ms</message>
+                <stack-trace>Error: element ("id:login_enter_password") still not existing after 10000ms
+                    at C:\TESTES-MOBILE-EBAC-SHOP\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at async Element.wrapCommandFn (C:\TESTES-MOBILE-EBAC-SHOP\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\TESTES-MOBILE-EBAC-SHOP\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\TESTES-MOBILE-EBAC-SHOP\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\TESTES-MOBILE-EBAC-SHOP\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\TESTES-MOBILE-EBAC-SHOP\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\TESTES-MOBILE-EBAC-SHOP\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async LoginScreen.goToTwoFactorAuth (C:\TESTES-MOBILE-EBAC-SHOP\test\screens\login.screen.js:35:9)
+                    at async Context.&lt;anonymous> (C:\TESTES-MOBILE-EBAC-SHOP\test\specs\login.spec.js:15:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

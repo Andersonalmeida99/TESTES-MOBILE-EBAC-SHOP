@@ -4,22 +4,27 @@
   "description": "Projeto de teste Ebac Mobile",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js"
-    
-    
-    
+    "test": "npx wdio run ./wdio.conf.js",
+    "report": "npx allure open allure report"
   },
   "author": "",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
-    "@wdio/cli": "^7.19.7"
-  },
-  "devDependencies": {
+    "@wdio/allure-reporter": "^7.20.7",
+    "@wdio/appium-service": "^7.21.0",
+    "@wdio/browserstack-service": "^7.21.0",
     "@wdio/local-runner": "^7.19.7",
     "@wdio/mocha-framework": "^7.19.7",
     "@wdio/spec-reporter": "^7.19.7",
+    "allure-commandline": "^2.18.1",
+    "appium": "^1.22.3",
     "chromedriver": "^101.0.0",
-    "wdio-chromedriver-service": "^7.3.2"
+    "service": "^0.1.4",
+    "wdio-chromedriver-service": "^7.3.2",
+    "wdio-video-reporter": "^3.2.3"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^7.21.0"
   }
 }
